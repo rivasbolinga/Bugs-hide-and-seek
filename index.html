@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Andrea Rivas | Portfolio</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+
+  <body>
+    <header class="toolbar">
+        <button class="toolbar-menu">
+          <img class="hamburger-icon" src="./assets/hamburger-menu.svg" alt="Hamburger menu icon"/>
+        </button>
+      </div>
+    </header>
+
+<!--Mobile menu window STARTS-->
+      <nav class="mobile-nav hidden">
+       <button class="btn-close">&times;</button>
+        <ul class="link">
+      <li >
+        <a href="#intro-container">Hello</a>
+      </li>
+      <li>
+        <a href="#projects-section">Portfolio</a>
+      </li>
+      <li>
+        <a href="#about-section">About</a>
+      </li>
+      <li>
+        <a href="#form-section">Contact</a>
+      </li>
+      </nav>
+
+  <!-- Desktop nav STARTS HERE-->
+    <header class="desk-header">
+      <nav class="header-menu">
+        <ul>
+          <li>
+            <a href="#intro-container">Hello</a>
+          </li>
+          <li>
+            <a href="#projects-section">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about-section">About</a>
+          </li>
+          <li>
+            <a href="#form-section">Contact</a>
+          </li>
+      </nav>
+    </header>
+  <!-- END Desktop nav -->
+  
+    <!-- Introduction -->
+
+    <section class="introduction">
+      <div class="intro-container" id="intro-container">
+        <h1 class="full-name">
+          Andrea Rivas 
+        </h1>
+        <p class="description">
+        Hello! I am a software developer! I can help you build a product,
+        feature or website. Taka a look of my works. <br>
+        If you like what you see
+        and have a project you need coded, don’t hesitate and contact me.
+      </p>
+      <button class="btn-collaboration">
+        Start collaboration
+      </button>
+    </div>
+    <div class="background-intro-pic">
+      <img class="background-picture" src="assets/image_geometry_2.png" alt="Picture Mobile Decoration">
+    <div class="desk-background-container">
+      </div>
+    </div>
+    </section>
+  
+   <!-- Works section -->
+   <section class="projects-section" id="projects-section">
+     <div class="projects-title">Projects</div>
+     <div class="projects-cards">
+      <div class="container-1"></div>
+      <div class="container-2"></div>
+      <div class="container-3"></div>
+       </div>
+   </section>
+    <!--END Works section DESKTOP VERSION-->
+
+  <!-- Works Modal pop-up starts here -->
+  <section class="modal-container" id="myMOdal">
+      <button class="close-modal">&times</button>
+      <h3 class="project-title"></h3>
+      <ul class="card-tech-modal">
+        <li>HTML/CCS</li>
+        <li>Ruby on Rails</li>
+        <li>JavaScript</li>
+      </ul>
+      <img class="project-image" src="">
+      <p class="project-description"></p>
+      <div class="btns-modal">
+      <button class="btn-modal seeLive" src=${projectInfo[i].liveVersion}>See live
+        <img class="iconModal" src="../assets/Union (8).png">
+      </button>
+      <button class="btn-modal seeSource" src=${projectInfo[i].source}>See source
+        <img class="iconModal" src="../assets/Vector (8).png">
+      </button>
+      </div>
+      <div class="next-prev-proj">
+        <button class="prev-btn">	&larr; Previous project</button>
+        <button class="prev-btn">Next Project 	&rarr;</button>
+      </div>
+  </section>
+  <!-- Works Modal pop-up ends here -->
+
+  <!-- About me section -->
+
+    <section class="about-me-section" id="about-section">
+      <div class="about-me-info">
+        <h4 class="about-title">About</h4>
+        <p class="about-resume">I am a Software engineer with a few years of experience.  I am interested in Full Stack positions, here you can see some of my projects, if you like what you see do not hesitate to contact me. </p>
+        <button class="get-my-cv-btn">
+          Get my CV
+          <img class="get-my-cv-icon" src="assets/Group 61.png" alt="icon">
+        </button>
+      </div>
+      <div class="cards">
+      <div class="languages card">
+        <h5 class="card-title">Languages</h5>
+        <ul class="card-list">
+        <li>JavaScript(ES6)</li>
+        <li>Ruby</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      </div>
+      <div class="frameworks card">
+        <h5 class="card-title">Frameworks</h5>
+        <ul class="list">
+        <li>Bootstrap</li>
+        <li>Ruby on rails</li>
+        <li>Rspec</li>
+        <li>Capibara </li>
+        <li>Selenium</li>
+      </ul>
+      </div>
+      <div class="skills card">
+        <h5 class="card-title">Skills</h5>
+        <ul class="card-list">
+        <li>Codekit</li>
+        <li>Codepen</li>
+        <li>Github</li>
+        <li>GitLAb</li>
+        <li>Terminal</li>
+      </ul>
+      </div>
+    </div>
+    </section>
+
+  <!-- Form section -->
+
+    <section class="form-section" id="form-section">
+      <div class="form-header">
+        <h1 class="form-title">Get started</h1>
+        <p class="form-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <form action="https://formspree.io/f/mvoyvvge" method="POST" >
+          <div class="form-fields">
+          <div class="name-field">
+          <label for="name" class="label">Your name</label>
+            <input
+            id="name"
+            name="name"
+            type="text" 
+            placeholder="Your name" 
+            maxlength="30" required>
+          </div>
+      
+        <div class="email-field">
+          <p class="error-message">*invalid email.</p>
+          <label for="email" class="label">Your email</label>
+          <input id="email" name="email" type="email" placeholder="Your email" required>
+        </div>
+        <div class="form-message">
+          <label for="textarea" class="label">Message</label>
+          <textarea id="textarea" name="message" type="text" placeholder="Enter your message here..." maxlength="500" required></textarea>
+        </div>
+      </div>
+        <button class="btn-collaboration btn-submit">Start collaboration</button>
+      </form>
+    </section>
+
+         <!-- Foooter section -->
+
+    <footer id="footer">
+      <div class="get-my-resume">
+        <p class="get-my-resume-text">Get my resume</p>
+        <p class="get-my-cv-text">Get my CV</p>
+        <img class="get-my-resume-image" src="./assets/Union (2).png" alt="icon">
+      </div>
+      <ul class="social-media-logos">
+        <li>
+          <a href="#">
+          <img class="logo" src="./assets/ic_stackoverflow.png" alt="logo stackoverflow">
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <img class="logo" src="./assets/Vector (1).png" alt="logo github">
+        </a>
+        </li>
+        <li>
+          <a href="#">
+          <img class="logo" src="./assets/Vector (2).png" alt="logo twitter">
+        </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="logo" src="./assets/Vector (3).png" alt="logo LinkedIn">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+          <img class="logo" src="./assets/Vector (4).png" alt="logo Medium">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img class="logo" src="./assets/Vector (5).png" alt="lodo right">
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
